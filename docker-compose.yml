@@ -1,0 +1,20 @@
+version: '3.5'
+
+services:
+    writer:
+      image: '' # put here the image
+      container_name: bot_writer
+      networks:
+        - bot-net
+
+      restart: always
+      environment:
+        # your backend here
+        BOT_API: 'http://bot:80/api/message'
+        STOCK_API: 'wss://api-invest.tinkoff.ru/openapi/md/v1/md-openapi/ws'
+        STOCK_TOKEN: '<your_tinkoff_open_api_token_here>'
+        BOT_FIGI: 'BBG000BCSST7'
+
+networks:
+    bot-net:
+        driver: bridge
