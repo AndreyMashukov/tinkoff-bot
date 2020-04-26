@@ -14,6 +14,8 @@ services:
         STOCK_API: 'wss://api-invest.tinkoff.ru/openapi/md/v1/md-openapi/ws'
         STOCK_TOKEN: '<your_tinkoff_open_api_token_here>'
         BOT_FIGI: 'BBG000BCSST7'
+      volumes:
+        - .env.dist:/go/src/app/.env
 
 networks:
     bot-net:
