@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
     writer:
-      image: '' # put here the image
+      image: 'amashukov/tinkoff-bot' # put here the image
       container_name: bot_writer
       networks:
         - bot-net
