@@ -50,3 +50,5 @@ response Body: <your backend response body here>
 * STOCK_API - URL Tinkoff Open API (поддерживается только websocket)
 * STOCK_TOKEN - токен для доступа на биржу
 * BOT_FIGI - FIGI акции которой собираетесь торговать или слушать изменения
+
+#### Есть вопросы? пиши в чате телеграм https://t.me/dev_coach
